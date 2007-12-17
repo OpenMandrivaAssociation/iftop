@@ -9,7 +9,6 @@ Release: %release
 Source: http://www.ex-parrot.com/~pdw/iftop/download/%{name}-%{version}.tar.bz2
 URL: http://www.ex-parrot.com/~pdw/iftop/ 
 Group: Monitoring 
-BuildRoot: %{_tmppath}/%{name}-buildroot
 License: GPL
 BuildRequires: libpcap-devel libncurses-devel texinfo
 
