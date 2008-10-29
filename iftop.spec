@@ -1,6 +1,6 @@
 %define name iftop 
 %define version 0.17
-%define release %mkrel 4
+%define release %mkrel 5
 
 Name: %name
 Summary: Command line tool that displays bandwidth usage on an interface
@@ -9,7 +9,7 @@ Release: %release
 Source: http://www.ex-parrot.com/~pdw/iftop/download/%{name}-%{version}.tar.bz2
 URL: http://www.ex-parrot.com/~pdw/iftop/ 
 Group: Monitoring 
-BuildRoot: %{_tmppath}/%{name}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License: GPL
 BuildRequires: libpcap-devel libncurses-devel texinfo
 
