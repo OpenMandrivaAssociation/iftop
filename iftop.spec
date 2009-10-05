@@ -6,7 +6,8 @@ Name: %name
 Summary: Command line tool that displays bandwidth usage on an interface
 Version: %version
 Release: %release
-Source: http://www.ex-parrot.com/~pdw/iftop/download/%{name}-%{version}.tar.bz2
+Source0: http://www.ex-parrot.com/~pdw/iftop/download/%{name}-%{version}.tar.bz2
+Patch0: iftop-0.17-format_not_a_string_literal_and_no_format_arguments.diff
 URL: http://www.ex-parrot.com/~pdw/iftop/ 
 Group: Monitoring 
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -22,6 +23,7 @@ so slow?".
 %prep
 rm -rf $RPM_BUILD_ROOT
 %setup -q
+%patch0 -p0
 
 %build
 %configure
