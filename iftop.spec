@@ -1,6 +1,6 @@
 %define name iftop 
 %define version 0.17
-%define release %mkrel 8
+%define release 9
 
 Name: %name
 Summary: Command line tool that displays bandwidth usage on an interface
