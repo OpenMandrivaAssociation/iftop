@@ -8,7 +8,7 @@ Version: %version
 Release: %release
 Source0: http://www.ex-parrot.com/~pdw/iftop/download/%{name}-%{version}.tar.bz2
 Patch0: iftop-0.17-format_not_a_string_literal_and_no_format_arguments.diff
-URL: http://www.ex-parrot.com/~pdw/iftop/ 
+URL: https://www.ex-parrot.com/~pdw/iftop/ 
 Group: Monitoring 
 License: GPLv2
 BuildRequires: libpcap-devel pkgconfig(ncurses) texinfo
